@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="SenterosAI — Chat with AI.">
+    <meta name="keywords" content="AI, machine learning, artificial intelligence, technology, SenterosAI, Senteros, Chat, ChatGPT, Gemini, Геними, ЧатГПТ, чат, Сентерос, ИИ, ЧатGPT">
+    <meta name="author" content="SenterosAI Team">
+    <meta property="og:title" content="SenterosAI">
+    <meta property="og:description" content="SenterosAI — Chat with AI.">
+    <meta property="og:image" content="https://i.ibb.co/pW67Mmz/Senteros-AI-avatar-removebg-preview.png">
+    <meta property="og:url" content="https://your-website-url.com">
+    <meta name="twitter:title" content="SenterosAI">
+    <meta name="twitter:description" content="SenterosAI — Chat with AI.">
+    <meta name="twitter:image" content="https://i.ibb.co/pW67Mmz/Senteros-AI-avatar-removebg-preview.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://i.ibb.co/pW67Mmz/Senteros-AI-avatar-removebg-preview.png" type="image/png">
+
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>SenterosAI</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h3 class="navbar__logo">SenterosAI</h3>
+        <button class="navbar__button" id="themeToggler"><i class='bx bx-sun'></i></button>
+    </nav>
+
+    <header class="header">
+        <div class="header__title">
+            <h1>Hello, There!</h1>
+            <h2>How can I help you today?</h2>
+        </div>
+        <div class="suggests">
+            <div class="suggests__item">
+                <p class="suggests__item-text">
+                    Give tips on helping kids finish their homework on time
+                </p>
+                <div class="suggests__item-icon">
+                    <i class='bx bx-stopwatch'></i>
+                </div>
+            </div>
+            <div class="suggests__item">
+                <p class="suggests__item-text">
+                    Help me write an out-of-office email
+                </p>
+                <div class="suggests__item-icon">
+                    <i class='bx bx-edit-alt'></i>
+                </div>
+            </div>
+            <div class="suggests__item">
+                <p class="suggests__item-text">
+                    Give me phrases to learn a new language
+                </p>
+                <div class="suggests__item-icon">
+                    <i class='bx bx-compass'></i>
+                </div>
+            </div>
+            <div class="suggests__item">
+                <p class="suggests__item-text">
+                    Show me how to build something by hand
+                </p>
+                <div class="suggests__item-icon">
+                    <i class='bx bx-wrench'></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="chats"></section>
+
+    <section class="prompt">
+        <form action="#" class="prompt__form" novalidate>
+            <div class="prompt__input-wrapper">
+                <input type="text" placeholder="Enter a prompt here" class="prompt__form-input" required>
+                <button class="prompt__form-button" id="sendButton">
+                    <i class='bx bx-send'></i>
+                </button>
+                <button class="prompt__form-button" id="deleteButton">
+                    <i class='bx bx-trash'></i>
+                </button>
+            </div>
+        </form>
+        <p class="prompt__disclaim">
+            SenterosAI may display inaccurate info, including about people, so double-check its responses.
+        </p>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
