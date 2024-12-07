@@ -125,7 +125,7 @@ const requestApiResponse = async (incomingMessageElement) => {
         if (!response.ok) throw new Error(responseData.error.message);
 
         const responseText = responseData?.candidates?.[0]?.content?.parts?.[0]?.text;
-        if (!responseText) throw new Error("Invalid API response.");
+        if (!responseText) throw new Error("Ой! Похоже возникли технические неполадки.");
 
         const parsedApiResponse = marked.parse(responseText);
         const rawApiResponse = responseText;
@@ -170,8 +170,8 @@ const addCopyButtonToCodeBlocks = () => {
                 copyButton.innerHTML = `<i class='bx bx-check'></i>`;
                 setTimeout(() => copyButton.innerHTML = `<i class='bx bx-copy'></i>`, 2000);
             }).catch(err => {
-                console.error("Copy failed:", err);
-                alert("Unable to copy text!");
+                console.error("Ошибка копирования:", err);
+                alert("Невозможно скопировать текст!");
             });
         });
     });
@@ -273,3 +273,4 @@ messageForm.addEventListener('submit', (e) => {
 
 // Load saved chat history on page load
 loadSavedChatHistory();
+document.querySelector(".prompt__form-input").setAttribute("placeholder", "Введите запрос здесь");
