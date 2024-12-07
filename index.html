@@ -26,63 +26,23 @@
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
-    <title>SenterosAI - beta</title>
+    <title>SenterosAI</title>
 
-    <style>
-        /* Уведомление */
-        .notification {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: #ffcc00;
-            color: black;
-            padding: 10px;
-            text-align: center;
-            font-size: 16px;
-            z-index: 9999;
-        }
-
-        .notification button {
-            background-color: transparent;
-            border: none;
-            color: black;
-            font-size: 18px;
-            cursor: pointer;
-            padding: 5px 10px;
-            margin-left: 20px;
-        }
-
-        /* Оформление кнопки закрытия */
-        .notification button:hover {
-            color: red;
-        }
-    </style>
-
-</head>
-
-<body>
-
-    <!-- Уведомление -->
-    <div class="notification">
-        Внимание! Это бета версия SenterosAI. Могут быть баги.
-        <button id="closeNotification">Закрыть</button>
-    </div>
 
     <nav class="navbar">
-        <h3 class="navbar__logo">SenterosAI Beta</h3>
+        <h3 class="navbar__logo">SenterosAI</h3>
         <button class="navbar__button" id="themeToggler"><i class='bx bx-sun'></i></button>
     </nav>
 
     <header class="header">
         <div class="header__title">
-            <h1>Hello, There!</h1>
-            <h2>How can I help you today?</h2>
+            <h1>Привет!</h1>
+            <h2>Чем я могу вам помочь сегодня?</h2>
         </div>
         <div class="suggests">
             <div class="suggests__item">
                 <p class="suggests__item-text">
-                    Give tips on helping kids finish their homework on time
+                    Дайте советы, как помочь детям вовремя закончить домашнюю работу
                 </p>
                 <div class="suggests__item-icon">
                     <i class='bx bx-stopwatch'></i>
@@ -90,7 +50,7 @@
             </div>
             <div class="suggests__item">
                 <p class="suggests__item-text">
-                    Help me write an out-of-office email
+                    Помогите мне написать электронное письмо об отсутствии на работе
                 </p>
                 <div class="suggests__item-icon">
                     <i class='bx bx-edit-alt'></i>
@@ -98,7 +58,7 @@
             </div>
             <div class="suggests__item">
                 <p class="suggests__item-text">
-                    Give me phrases to learn a new language
+                    Дайте мне фразы, чтобы выучить новый язык
                 </p>
                 <div class="suggests__item-icon">
                     <i class='bx bx-compass'></i>
@@ -106,7 +66,7 @@
             </div>
             <div class="suggests__item">
                 <p class="suggests__item-text">
-                    Show me how to build something by hand
+                    Покажите мне, как построить что-то вручную
                 </p>
                 <div class="suggests__item-icon">
                     <i class='bx bx-wrench'></i>
@@ -130,20 +90,10 @@
             </div>
         </form>
         <p class="prompt__disclaim">
-            Senteros AI may display inaccurate info, including about people, so double-check its responses.
+            Senteros AI может отображать неточную информацию, в том числе о людях, поэтому дважды проверяйте его ответы.
         </p>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <script src="script.js"></script>
-
-    <script>
-        // Закрытие уведомления
-        document.getElementById('closeNotification').addEventListener('click', function() {
-            document.querySelector('.notification').style.display = 'none';
-        });
-    </script>
-</body>
-
-</html>
